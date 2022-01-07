@@ -8,11 +8,11 @@ interface TypeProps {
 
 const Layout: React.FC<TypeProps> = ({ children }) => {
   return (
-    <main className="flex flex-row w-full h-screen">
+    <main className="font-poppins flex flex-row w-full h-screen text-gray-600 dark:text-gray-100">
       <SideBar />
-      <div className="flex flex-col w-full max-w-full h-full overflow-y-auto">
+      <div className="flex flex-col w-full max-w-full h-full overflow-hidden">
         <MenuBar/>
-        <div className="flex flex-col w-full h-full overflow-y-auto">
+        <div className="flex flex-col w-full h-full overflow-hidden">
           {children}
         </div>
       </div>
