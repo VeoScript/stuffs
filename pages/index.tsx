@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import React from 'react'
 import Head from 'next/head'
+import Layout from '../layouts/default'
 
 const Home: NextPage = () => {
   return (
@@ -8,9 +9,9 @@ const Home: NextPage = () => {
       <Head>
         <title>Stuffs</title>
       </Head>
-      <div>
-        STUFFS
-      </div>
+      <Layout>
+        Main Body
+      </Layout>
     </React.Fragment>
   )
 }
