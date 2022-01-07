@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import React from 'react'
 import Head from 'next/head'
 import Layout from '../layouts/default'
+import Reports from '../components/Reports'
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +11,7 @@ const Home: NextPage = () => {
         <title>Stuffs</title>
       </Head>
       <Layout>
-        Main Body
+        <Reports />
       </Layout>
     </React.Fragment>
   )
