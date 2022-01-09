@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>Stuffs</title>
+        <title>Stuffs | Reports</title>
       </Head>
       <Layout>
         <Reports />

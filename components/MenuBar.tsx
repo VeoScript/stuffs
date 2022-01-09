@@ -1,7 +1,8 @@
 import React from 'react'
+import Router from 'next/router'
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
-import { RiLayoutGridFill, RiQuillPenFill, RiAccountPinCircleFill, RiMoonFill, RiSunFill } from 'react-icons/ri'
+import { RiLayoutGridFill, RiQuillPenFill, RiAccountPinCircleFill, RiMoonFill, RiSunFill, RiLogoutBoxRFill } from 'react-icons/ri'
 
 const MenuBar = () => {
 
@@ -44,6 +45,14 @@ const MenuBar = () => {
             }
           </button>
         )}
+        <button
+          title="Logout"
+          onClick={() => {
+            Router.push('/login')
+          }}
+        >
+          <RiLogoutBoxRFill className="w-5 h-5 transition ease-in-out duration-200 hover:scale-95 text-gray-600 dark:text-gray-100" />
+        </button>
       </div>
     </div>
   )
